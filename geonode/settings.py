@@ -177,6 +177,7 @@ STATICFILES_FINDERS = (
 # INSTALLED_APPS, se there is no need to add maps/templates or admin/templates
 TEMPLATE_DIRS = (
     os.path.join(PROJECT_ROOT, "templates"),
+    os.path.join(PROJECT_ROOT, "maps", "templates", "maps"),
 )
 
 # Location of translation files
@@ -797,7 +798,7 @@ LEAFLET_CONFIG = {
 }
 
 # option to enable/disable resource unpublishing for administrators
-RESOURCE_PUBLISHING = False
+RESOURCE_PUBLISHING = True
 
 CACHES = {
     # DUMMY CACHE FOR DEVELOPMENT
